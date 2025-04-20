@@ -2,14 +2,14 @@ library(readxl)
 library(ggplot2)
 library(reshape2)
 library(pheatmap)
-#jaccard similarity index is used here and it based on intersection divided by union feature for different groups
+# Jaccard similarity index is used here, and it is based on the intersection divided by the union feature for different groups
 # File path
-path <- "/Users/b/Desktop/blood/jaccard//"
+path <- "/Users/b/Desktop/blood/jaccard/"
 
 # Defining the cancer types
 cancer_types <- c("HNSC", "ESCA", "STAD", "CRC", "COAD")
 
-#Reading excel files and save it as a list 
+#Reading Excel files and saving it as a list 
 xlsx_files <- list.files(path, pattern = "\\.xlsx$", full.names = TRUE)
 cancer_microbes <- list()
 
